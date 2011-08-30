@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Stoker</string>
+    <string name="current_temp">Current Temperature</string>
+    <string name="sensor_name">Sensor Name</string>
+    <string name="current_temp_title">Current Temp</string>
+    <string name="target_temp_title">Target Temp</string>
+    <string name="alarm_off_title">Alarm Off</string>
+    <string name="alarm_target_title">Alarm Target</string>
+    <string name="alarm_hilo">Alarm Hi/Lo</string>
+    <string name="alarm">Alarm</string>
+    <string name="update_button_text">Update Settings</string>
+    <string name="alarm_hi">high</string>
+    <string name="alarm_lo">low</string>
+    <string name="title">Stoker Project</string>
+    <string name="view_button_label">View</string>
+    <string name="viewall_button_label">View All</string>
+    <string name="update_interval"></string>
+    <string name="socket_address"></string>
+    <string name="menu_prefs_title">Settings</string>
+    <string name="menu_prefs_title_cond">Settings</string>
+    <string name="update_interval_title">Update Interval (sec)</string>
+    <string name="socket_title">Socket Address</string>
+    <string name="switch_id_label">Switch ID</string>
+</resources>

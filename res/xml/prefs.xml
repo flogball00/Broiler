@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<EditTextPreference android:title="@string/update_interval"
+		android:defaultValue="5" android:key="UPDATE_Interval" android:summary="@string/update_interval_title"/>
+	<EditTextPreference android:title="@string/socket_address"
+		android:defaultValue="192.168.0.255" android:key="SOCKET_ADDRESS" android:summary="@string/socket_title"/>
+	
+</PreferenceScreen>

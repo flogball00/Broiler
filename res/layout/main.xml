@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/RelativeLayout1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/dw">
+	<Button android:id="@+id/viewAll" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true" android:layout_marginBottom="128dp"
+		android:text="@string/viewall_button_label" android:height="48dip"
+		android:layout_width="fill_parent" />
+	<Spinner android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/sensorSelectionSpinner"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:layout_marginTop="85dp" />
+	<TextView android:layout_width="wrap_content" android:id="@+id/textView1"
+		android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:text="@string/title" android:layout_alignParentRight="true"
+		android:gravity="center" android:textSize="48sp" android:textColor="#FFFFFF" />
+	<Button android:layout_width="wrap_content" android:id="@+id/viewSensor"
+		android:text="@string/view_button_label" android:layout_height="wrap_content"
+		android:layout_below="@+id/sensorSelectionSpinner"
+		android:layout_alignParentRight="true" />
+
+</RelativeLayout>

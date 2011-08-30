@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ScrollView android:id="@+id/scrollView1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<RelativeLayout android:id="@+id/RelativeLayout1"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/dw">
+				<RelativeLayout android:layout_width="wrap_content"
+					android:layout_alignParentLeft="true" android:id="@+id/relativeLayout2"
+					android:layout_height="wrap_content" android:layout_alignParentTop="true"
+					android:layout_alignParentRight="true">
+					<TextView android:layout_width="wrap_content"
+						android:textColor="#FFFFFF" android:id="@+id/textView3"
+						android:text="@string/sensor_name" android:layout_alignParentLeft="true"
+						android:layout_height="wrap_content" android:paddingLeft="10dip"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:layout_alignParentTop="true" />
+					<TextView android:layout_width="wrap_content"
+						android:textColor="#FFFFFF" android:id="@+id/textView1"
+						android:paddingRight="10dip" android:text="@string/current_temp_title"
+						android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentRight="true" />
+					<TextView android:layout_width="fill_parent"
+						android:textColor="#00FF00" android:textSize="48sp"
+						android:gravity="center" android:layout_alignLeft="@+id/textView1"
+						android:id="@+id/currentTemparature" android:paddingRight="10dip"
+						android:layout_below="@+id/textView1" android:text="Temperature"
+						android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" />
+					<EditText android:paddingLeft="10dip"
+						android:layout_width="150dp" android:inputType="number"
+						android:id="@+id/targetTemp" android:layout_below="@+id/textView2"
+						android:layout_alignParentLeft="true" android:layout_height="wrap_content" />
+					<SeekBar android:layout_below="@+id/targetTemp"
+						android:layout_width="fill_parent"
+						android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+						android:id="@+id/targetSeekBar" android:layout_alignLeft="@+id/textView3" />
+					<TextView android:layout_alignTop="@+id/currentTemparature"
+						android:layout_width="wrap_content" android:layout_alignLeft="@+id/textView2"
+						android:id="@+id/sensorName" android:text="Sensor name"
+						android:layout_height="wrap_content" android:paddingLeft="10dip"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+					<TextView android:layout_width="wrap_content"
+						android:textColor="#FFFFFF" android:id="@+id/textView2"
+						android:layout_below="@+id/sensorName" android:text="@string/target_temp_title"
+						android:layout_alignParentLeft="true" android:paddingTop="15dip"
+						android:layout_height="wrap_content" android:paddingLeft="10dip"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+				</RelativeLayout>
+				<RelativeLayout android:layout_below="@+id/relativeLayout2"
+					android:layout_width="wrap_content" android:layout_alignParentLeft="true"
+					android:id="@+id/relativeLayout3" android:layout_height="wrap_content">
+					<RadioGroup android:layout_below="@+id/targetSeekBar"
+						android:layout_marginTop="9dp" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/alarmGroup"
+						android:layout_alignLeft="@+id/textView3">
+						<RadioButton android:layout_height="wrap_content"
+							android:checked="true" android:textColor="#FFFFFF" android:id="@+id/alarmOff"
+							android:layout_width="wrap_content" android:text="@string/alarm_off_title" />
+						<RadioButton android:layout_height="wrap_content"
+							android:textColor="#FFFFFF" android:id="@+id/alarmTarget"
+							android:layout_width="wrap_content" android:text="@string/alarm_target_title" />
+						<RadioButton android:layout_height="wrap_content"
+							android:textColor="#FFFFFF" android:id="@+id/alarmHiLo"
+							android:layout_width="wrap_content" android:text="@string/alarm_hilo" />
+					</RadioGroup>
+					<TextView android:layout_width="wrap_content"
+						android:textColor="#FFFFFF" android:layout_toLeftOf="@+id/et_alarm_hi"
+						android:layout_alignBaseline="@+id/et_alarm_hi" android:id="@+id/tv_alarm_hi"
+						android:text="@string/alarm_hi" android:layout_alignBottom="@+id/et_alarm_hi"
+						android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" />
+					<EditText android:layout_width="60dp"
+						android:layout_toLeftOf="@+id/tv_alarm_lo" android:inputType="number"
+						android:id="@+id/et_alarm_hi" android:layout_alignBottom="@+id/alarmGroup"
+						android:layout_height="wrap_content" />
+					<TextView android:layout_width="wrap_content"
+						android:textColor="#FFFFFF" android:layout_toLeftOf="@+id/et_alarm_lo"
+						android:layout_alignBaseline="@+id/et_alarm_hi" android:id="@+id/tv_alarm_lo"
+						android:text="@string/alarm_lo" android:layout_alignBottom="@+id/et_alarm_hi"
+						android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" />
+					<EditText android:layout_width="60dp"
+						android:layout_alignBaseline="@+id/tv_alarm_lo" android:inputType="numberSigned"
+						android:id="@+id/et_alarm_lo" android:layout_alignBottom="@+id/tv_alarm_lo"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true" />
+				</RelativeLayout>
+				<TextView android:layout_width="wrap_content" android:id="@+id/textView4"
+					android:paddingRight="20dip" android:text="@string/switch_id_label"
+					android:layout_alignParentLeft="true" android:layout_alignBottom="@+id/switchIDSpinner"
+					android:layout_height="wrap_content" android:paddingLeft="10dip"
+					android:textAppearance="?android:attr/textAppearanceMedium" />
+				<Spinner android:layout_below="@+id/relativeLayout3"
+					android:layout_toRightOf="@+id/textView4" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:id="@+id/switchIDSpinner"
+					android:paddingTop="10dip" />
+				<Button android:layout_width="fill_parent" android:id="@+id/updateButton"
+					android:text="@string/update_button_text" android:layout_below="@+id/textView4"
+					android:layout_marginTop="17dp" android:layout_alignParentLeft="true"
+					android:layout_height="wrap_content" />
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>
